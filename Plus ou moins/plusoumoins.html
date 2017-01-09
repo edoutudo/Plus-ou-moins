@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Bienvenu sur le jeu du "plus ou moins"</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+	var nbdemande = prompt("Joueur 1, saisissez un nombre entre 1 et 100");
+
+	var nbadeviner = prompt("Joueur 2, essayer de deviner le nombre du Joueur 1");
+	var nombre = 1;
+
+	while (nbadeviner != nbdemande) 
+	{
+		if (nbadeviner > nbdemande) 
+		{
+			nombre = nombre + 1;
+			nbadeviner = prompt("C'est moins"); 
+		} 
+		else if (nbadeviner < nbdemande) 
+		{
+			nombre = nombre + 1;
+			nbadeviner = prompt("C'est plus");
+		}
+		
+	}
+		alert("Bravo, vous avez gagné en " + nombre + " fois");
+    
+    var rejouer = prompt("Voulez-vous rejouer ?");
+    if (rejouer == "oui");
+    	{
+    		var nbdemande = prompt("Joueur 2, saisissez un nombre entre 1 et 100");
+
+			var nbadeviner = prompt("Joueur 1, essayer de deviner le nombre du Joueur 1");
+			
+			var nombre = 1;
+
+	while (nbadeviner != nbdemande) 
+	{
+		if (nbadeviner > nbdemande) 
+		{
+			nombre = nombre + 1;
+			nbadeviner = prompt("C'est moins"); 
+		} 
+		else if (nbadeviner < nbdemande) 
+		{
+			nombre = nombre + 1;
+			nbadeviner = prompt("C'est plus");
+		}
+		
+	}
+	alert("Bravo, vous avez gagné en " + nombre + " fois");
+}
+	
+    </script>
+
+</body>
+</html>
